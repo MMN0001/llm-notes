@@ -19,4 +19,14 @@ a fastText linear classifier to remove non-English pages and filters low quality
 
 trained a linear model to classify pages used as references.
 
-Tokenizer: tokenize the data with byte-pair encoding(BPE) algorithm (
+Tokenizer: tokenize the data with byte-pair encoding(BPE) algorithm, using implementation from Sentence-Piece. 
+
+## Architecture
+
+1. Based on Transformer.
+
+2. Pre-normalization from GPT-3: normalize the input of each transformer sub-layer, instead of normalizing the output.
+
+3. SwiGLU activation function from PaLM: replace ReLU by SwiGLU activation function.
+
+4. Rotary Embeddings from GPTNeo: remove the absolute positional embeddings, add RoPE.
