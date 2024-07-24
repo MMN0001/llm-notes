@@ -30,3 +30,19 @@ Tokenizer: tokenize the data with byte-pair encoding(BPE) algorithm, using imple
 3. SwiGLU activation function from PaLM: replace ReLU by SwiGLU activation function.
 
 4. Rotary Embeddings from GPTNeo: remove the absolute positional embeddings, add RoPE.
+
+## Build-up from Scratch
+
+### tokenizer：
+
+SentencePiece(Byte-Pair Encoding algorithm): runs on UTF-8 encoded strings. First used in GPT-2.
+
+3 functions of tokenizer:
+
+1: train tokenizer vocabulary and merges on a given text.
+
+2: encode from text to tokens
+
+3: decode from tokens to text
+
+basic tokenizer class: train, encode, decode
