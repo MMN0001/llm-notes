@@ -1,3 +1,16 @@
+# ConvNeXt V2
+ConvNext which modernized from Convnets could also be scalable architectures, but when testing we still use benchmarking supervised learning performance on Imagenet.
+
+Many architectures has been shifting from supervised learning with labels to self-supervised pre-training, such as MAE which built from VIT architecture.
+
+MAE's arch is not suitable for Convnets cause its encode-decoder design is optimized for transformers. VIT focus on patches when Convnets is sliding windows.
+
+## ConvNeXt v2
+
+Make a mask-based self-supervised learning for Convnet models.
+*sparse convolutions
+*replace transformer with convnext block
+*global response normalization layer
 # LLaMA：Open and Efficient Foundation Language Models
 
 Previous assumption: more parameters lead to better performance. 
