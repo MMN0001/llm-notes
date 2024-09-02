@@ -8,8 +8,11 @@ MAE's arch is not suitable for Convnets cause its encode-decoder design is optim
 ## ConvNeXt v2
 
 Make a mask-based self-supervised learning for Convnet models.
+
 *sparse convolutions
+
 *replace transformer with convnext block
+
 *global response normalization layer
 # LLaMA：Open and Efficient Foundation Language Models
 
